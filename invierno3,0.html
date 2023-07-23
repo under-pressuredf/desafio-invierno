@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Desafío Invierno</title>
+  <style>
+    /* El estilo para el nav y el resto de los elementos sigue igual */
+
+    .paragraph {
+        margin-top: 60px;
+        margin-bottom: 40px;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      line-height: 1.6;
+      font-size: 14px;
+      text-align: justify;
+    }
+
+    h1{
+      text-align: center;
+      font-size: 24px;
+      margin-top: 40px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(230, 222, 222, 0.596);
+    }
+    .top1 h2{text-align: center;
+      font-size: 23px;
+      margin-top: 40px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(230, 222, 222, 0.596);
+    }
+
+.intro p {
+  margin-bottom: 20px;
+}
+
+.intro-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.intro-cards .card {
+  margin: 0 5px;
+}
+
+/* El estilo para el top1 y el resto de los elementos sigue igual */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+      background-color: #000000;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    nav h1 {
+        font-size: 14px;
+
+      padding: 0;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(230, 222, 222, 0.596);
+    }
+    
+    nav img {
+      width: 30px;
+      margin-right: 20px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 50%;
+    
+    }
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.top1, .top2, .top3 {
+  margin-bottom: 40px;
+}
+
+.top1, .top2, .top3 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+    text-align: center;
+      width: 240px;
+      height: 200px;
+      padding: 20px;
+      background: linear-gradient(
+            30deg,
+            rgb(226, 225, 223)50%,
+         rgb(0, 0, 0)100%); 
+    
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+}
+
+.card2{ text-align: center;
+    width: 246px;
+      height: 240px;
+  padding: 10px;
+  border: 2px solid #c9c629;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  
+    
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  }
+    
+      .card2:hover{
+        background: linear-gradient(
+            30deg,
+            rgb(226, 225, 223)50%,
+         rgb(0, 0, 0)100%); 
+    
+      }
+.card2 img{
+    width: 250px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  opacity: 100%;
+}
+
+.card:hover{
+        background: linear-gradient(
+            30deg,
+            rgb(212, 200, 24)50%,
+         rgb(0, 0, 0)100%);  }
+
+h2, h3 {
+  margin: 0;
+}
+
+.bottom-content {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.bottom-content p {
+  margin-bottom: 20px;
+}
+
+.bottom-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom-cards .card {
+  margin: 0 5px;
+}
+
+.container9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.centered-button {
+  /* Estilos para el botón */
+  padding: 10px 20px;
+  font-size: 18px;
+  background: linear-gradient(135deg, #cfb232, #c7c6c1);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.centered-button:hover {
+    background: linear-gradient(135deg, #e9e8e8, #0e0d0c);
+}
+
+footer {
+  text-align: center;
+ padding-top: 12px;
+ padding-bottom: 12px;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+}
+
+.professional-title {
+  font-family: 'Arial', sans-serif; /* Cambia 'Arial' por tu tipografía personalizada */
+  
+  color: #fff;
+  background: linear-gradient(135deg, #cfb232, #c7c6c1); /* Cambia los colores según tu preferencia */
+  padding: 10px 20px;
+ 
+  border-radius: 5px;
+  text-shadow: 2px 2px 4px rgba(51, 49, 54, 0.3); /* Agrega sombra al texto */
+
+  text-align: center;
+      font-size: 24px;
+      margin-top: 40px;
+      font-weight: bold;
+      margin-left: 220px;
+      margin-right: 220px;
+}
+@media (max-width: 767px) {
+    .professional-title{
+        font-size: 22px;
+        margin-left: 60px;
+      margin-right: 60px;
+    }
+
+ .card2{
+  width: 176px;
+  height: 120px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);}
+    
+   .card2:hover{
+        background: linear-gradient(
+            30deg,
+            rgb(226, 225, 223)50%,
+         rgb(0, 0, 0)100%);  }
+    
+   .card2 img{
+    width: 140px;
+      height: 103px;
+      object-fit: cover;
+      border-radius: 50%;}
+       }
+  </style>
+</head>
+<body>
+    <nav>
+        <h1>desafio invierno</h1>
+        <img src="images/loga.png" alt="Logo">
+      </nav>
+
+      <div class="paragraph">
+        <p>El invierno ha llegado y con él, una oportunidad para transformarte. Es momento de desafiar tus límites y conquistar tus metas fitness. Prepárate para un viaje emocionante que te llevará más allá de tus fronteras físicas y mentales.
+        
+            Este desafío de invierno te desafiará a ti mismo a lo largo de 30 días. Será un camino exigente, pero recuerda que las mayores recompensas provienen de los mayores esfuerzos. Cada día que te levantes y elijas enfrentar este desafío, estarás un paso más cerca de alcanzar tu mejor versión.
+            
+            El cambio físico que anhelas está al alcance de tus manos.  Imagina cómo te sentirás cuando llegue la primavera y mires atrás, orgulloso de todo lo que has logrado. Tus músculos se fortalecerán, tu resistencia aumentará y tu cuerpo se transformará en un testimonio de tu dedicación.
+        
+            No te rindas cuando encuentres obstáculos en el camino. Recuerda que la perseverancia es la clave para superar cualquier desafío. Tendrás días difíciles, pero cada uno de ellos será una oportunidad para crecer y demostrar tu fuerza interior.
+            
+            A medida que te muevas a través de este desafío, rodearte de una comunidad de personas con los mismos objetivos será invaluable. Encuentra apoyo en aquellos que también buscan un cambio y únanse en esta travesía hacia la transformación.
+            
+            No subestimes el poder de tu mente. Imagina cómo te sentirás cuando llegue la primavera y mires atrás, orgulloso de todo lo que has logrado. Tus músculos se fortalecerán, tu resistencia aumentará y tu cuerpo se transformará en un testimonio de tu dedicación.
+        
+            No te rindas cuando encuentres obstáculos en el camino. Recuerda que la perseverancia es la clave para superar cualquier desafío. Tendrás días difíciles, pero cada uno de ellos será una oportunidad para crecer y demostrar tu fuerza interior.
+            
+            A medida que te muevas a través de este desafío, rodearte de una comunidad de personas con los mismos objetivos será invaluable. Encuentra apoyo en aquellos que también buscan un cambio y únanse en esta travesía hacia la transformación.
+            
+            No subestimes el poder de tu mente.</p>
+      </div>
+     
+    
+      <h1 class="professional-title">premios del desafio</h1>
+      <br><br>
+    <div class="intro-cards">
+      <div class="card">
+        <img src="images/pngwing.com (6).png" alt="Card 1">
+        <h3>20.000</h3>
+      </div>
+      <div class="card">
+        <img src="images/pngwing.com (6).png" alt="Card 2">
+        <h3>$50.000</h3>
+      </div>
+      <div class="card">
+        <img src="images/pngwing.com (6).png" alt="Card 3">
+        <h3>10.000</h3>
+      </div>
+    </div>
+  </div>
+  <br>  <br>  <br>  <br>
+  <div class="container9">
+    <a href="https://www.ejemplo.com">
+      <button class="centered-button">Ir a Ejemplo.com</button>
+    </a>
+  </div>
+<br><br><br><br><br><br><br><br><br><br>
+  <h1 class="professional-title">Ganadores del desfio</h1>
+  <h1>Ganadores Nro 1</h1>
+  <div class="content">
+    <div class="top1">
+     
+      <div class="card2">
+        <img src="images/1ero.jpeg" alt="Ganador 1">
+        <h3>a</h3>
+      </div>
+      <div class="card2">
+        <img src="images/1eroo.jpeg" alt="Ganador 2">
+        <h3>b</h3>
+      </div>
+    </div>
+
+    <h1>Ganadores Nro2</h1>
+  <div class="content">
+    <div class="top1">
+
+      <div class="card2">
+        <img src="images/2do.jpeg" alt="Ganador 1">
+        <h3>d</h3>
+      </div>
+      <div class="card2">
+        <img src="images/2doo.jpeg" alt="Ganador 1">
+        <h3>d</h3>
+      </div>
+    </div>
+
+
+    <h1>Ganadores Nroo 3</h1>
+  <div class="content">
+    <div class="top1">
+
+      <div class="card2">
+        <img src="images/2do.jpeg" alt="Ganador 1">
+        <h3>d</h3>
+      </div>
+      <div class="card2">
+        <img src="images/2doo.jpeg" alt="Ganador 1">
+        <h3>d</h3>
+      </div>
+    </div>
+
+    <!-- Resto del código (top2, top3, footer) sigue igual -->
+  </div>
+
+  <footer>
+    <p>Contacto: correo@example.com | Teléfono: 123456789</p>
+  </footer>
+</body>
+</html>
+
